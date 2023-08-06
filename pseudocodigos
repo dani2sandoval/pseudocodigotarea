@@ -1,0 +1,36 @@
+Algoritmo NumeroPrimo
+    Definir numero, x, contador Como Entero
+	
+    Escribir "Ingrese un número:"
+    Leer numero
+	
+    contador = 0
+    Para x <- 1 Hasta numero Hacer
+        Si numero % x = 0 Entonces
+            contador = contador + 1
+        Fin Si
+    Fin Para
+	
+    Si contador = 2 Entonces
+        Escribir "El número es primo."
+    Sino
+        Escribir "El número NO es primo."
+    Fin Si
+FinAlgoritmo
+
+
+
+
+
+Algoritmo AñoBisiesto
+    Definir año Como Entero
+	
+    Escribir "Ingrese un año:"
+    Leer año
+	
+    Si (año % 4 = 0 Y año % 100 <> 0) Ó (año % 400 = 0) Entonces
+        Escribir "El año es bisiesto."
+    Sino
+        Escribir "El año NO es bisiesto."
+    Fin Si
+FinAlgoritmo
